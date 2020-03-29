@@ -4,9 +4,8 @@
 }
 
 body {
-  background-image: url("blue.jpg");
-  background-color: #00008B;
-
+  background-color: #679176;
+  font-family: segoe ui;
 }
 
 input {
@@ -16,10 +15,11 @@ input {
 #wrapper {
   width: 50%;
   margin: 0 auto;
-  background: black;
+  background: #BCD3CD;
   padding: 10px 15px;
   border-radius: 10px;
   opacity: .9;
+  font-family: segoe ui;
 }
 
 button {
@@ -32,24 +32,23 @@ button {
 button:hover {background-color: #e7e7e7;}
 
 h1 {
-  color: white;
+  color: black;
   padding-left: 30px;
-  background-color: blue;
+  background-color: #FBECD3;
   font-size: 50px;
   text-align: center;
-  opacity: .5;
+  opacity: .90;
 }
 
-
-
 #text {
-  color: white;
+  color: black;
   text-align: center;
   font-size: 25px;
+  font-family: segoe ui;
 }
 
 h3 {
-  color: white;
+  color: black;
   font-size: 30px;
 }
 
@@ -61,7 +60,7 @@ h4 {
 p {
   font-size: 20px;
   text-align: center;
-  color: #e0ebeb;
+  color: #black;
 }
 li {
   font-size: 18px;
@@ -72,5 +71,4 @@ li {
 
 a {
   text-decoration: none;
-
 }
