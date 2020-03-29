@@ -1,72 +1,68 @@
 <!DOCTYPE>
 <html>
-<head>
-<title> COVID-19 Survey </title>
-<link href="./resources/css/index.css" type="text/css" rel="stylesheet">
-</head>
-<body>
-
-<script src="script.js"> </script>
-
+  <head>
+  <title> COVID-19 Survey </title>
+  <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+    <body>
 
 
-<div id="wrapper">
-<h1> COVID-19 Survey </h1>
-
-<h3> Here is a survey to take so you know how high of a chance
-   you have it or not you dirty boi </h3>
-<label for="name" id="text"><strong>Name</strong> </label>
-<input type="text" class="form-control" id="name" placeholder="Name" required><br /><br>
-<label for="Age" id="text"><strong>Age</strong> </label>
-<input type="text" class="form-control" id="name" placeholder="Name" required><br /><br>
-<label for="name" id="text"><strong>Who Cares</strong> </label>
-<input type="text" class="form-control" id="name" placeholder="Who really cares" required>
-<br>
-<br>
+    <script src="script.js"> </script>
+    <script src="scriptFunc.js"> </script>
 
 
+    <div id="wrapper">
+      <h1> COVID-19 Survey </h1>
 
+      <h3> Here is a survey to take so you know how high of a chance
+       you have it or not you dirty boi </h3>
 
-<p> Have you traveled to any other countries lately? </p>
-<label id="text"><input type = "radio" value="score1" name="first">  yes
-<input type = "radio" value="score2" name="first">  no  </label>
-<p> Do you live in a densely populated city?  </p>
-<label id="text"><input type = "radio" value="score1" name="s">  yes
-<input type = "radio" value="score2" name="s">  no  </label>
-<p> Do you have a fever? </p>
-<label id="text"><input type = "radio" value="score1" name="third">  yes
-<input type = "radio" value="score2" name="third">  no  </label>
-<br>
-<br>
-<br>
-<br>
-<!--  if else questions from now on -->
-unfinished code
-<p id="yeet" class="yeet">Change me</p>
+      <!-- Intro questions -->
+       <label for="name" id="text"><strong>Name</strong> </label>
+       <input type="text" id="mytext" placeholder="Name"/>
+       <button onclick="updatetext()">Confirm</button> <p id="yeet" class="yeet"></p>
 
+       <label for="Age" id="text"><strong>Age</strong> </label>
+       <input type="text" id="ageText" placeholder="Age"/>
+       <button onclick="updateAge()">Confirm</button> <p id="ageTextAnswer" class="ageTextAnswer"></p>
 
+       <label for="Sex" id="text"><strong>Sex</strong> </label>
+       <input type="text" id="sex" placeholder="M/F/Other"/>
+       <button onclick="updateSex()">Confirm</button> <p id="sexAnswer" class="sexAnswer"></p>
 
-<p>Enter some words to change the words above ^^^</p>
-<input type="text" id="mytext" />
-<button onclick="updatetext()">Switch</button>
-<br>
-<br>
-<br>
-<br>
+      <br>
+      <br>
+      <br>
+      <!--initial questions to evaluate high risk or not -->
+      <p> Have you traveled to any other countries lately? </p>
+      <label id="text"><input type = "radio" value="score1" name="first">  yes
+      <input type = "radio" value="score2" name="first">  no  </label>
+      <p> Do you live in a densely populated city?  </p>
+      <label id="text"><input type = "radio" value="score1" name="s">  yes
+      <input type = "radio" value="score2" name="s">  no  </label>
+      <p> Do you have a fever? </p>
+      <label id="text"><input type = "radio" value="score1" name="third">  yes
+      <input type = "radio" value="score2" name="third">  no  </label>
+      <br>
 
-<p class="myText"> Are you sick? </p>
+      <!--  if else questions from now on -->
+      <br>
+      <br>
+      <br>
+      <br>
 
-<button onclick="document.getElementById('demo').innerHTML = yesFunction()">  Yes  </button>
-<p id = "demo">
-  <button onclick="document.getElementById('demo').innerHTML = yesFunction()">  No  </button>
+      <p class="myText"> Do you feel unwell? </p>
 
-<br>
-<br>
-<br>
-<br>
+      <button onclick="yesFunction()">.    Yes    .</button>
+      <button onclick="noFunction()">.     No    .</button>
+      <p id = "demo"></p>
 
-</div>
+      <br>
+      <br>
+      <br>
 
-</body>
+    </div>
+  </body>
 
 </html>
