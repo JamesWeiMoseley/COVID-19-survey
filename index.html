@@ -7,21 +7,21 @@
   </head>
     <body>
 
-
     <script src="script.js"> </script>
     <script src="scriptFunc.js"> </script>
-
 
     <div id="wrapper">
       <h1> COVID-19 Survey </h1>
 
-      <h3> Here is a survey to take so you know how high of a chance
-       you have it or not you dirty boi </h3>
+      <h3> Below is a simple survey to take if you feel at risk for
+          the COVID-19 virus.  Questions are based on medical findings.
+        Of course if you are really worried we always recommend to see a medical professional
+        for an accurate diagnosis.  </h3>
 
       <!-- Intro questions -->
        <label for="name" id="text"><strong>Name</strong> </label>
-       <input type="text" id="mytext" placeholder="Name"/>
-       <button onclick="updatetext()">Confirm</button> <p id="yeet" class="yeet"></p>
+       <input type="text" id="nameText" placeholder="Name"/>
+       <button onclick="updatetext()">Confirm</button> <p id="nameAnswer" class="nameAnswer"></p>
 
        <label for="Age" id="text"><strong>Age</strong> </label>
        <input type="text" id="ageText" placeholder="Age"/>
@@ -31,28 +31,29 @@
        <input type="text" id="sex" placeholder="M/F/Other"/>
        <button onclick="updateSex()">Confirm</button> <p id="sexAnswer" class="sexAnswer"></p>
 
-      <br>
-      <br>
-      <br>
       <!--initial questions to evaluate high risk or not -->
-      <p> Have you traveled to any other countries lately? </p>
+      <p> Have you traveled to any other countries in the last 6 months? </p>
       <label id="text"><input type = "radio" value="score1" name="first">  yes
       <input type = "radio" value="score2" name="first">  no  </label>
       <p> Do you live in a densely populated city?  </p>
       <label id="text"><input type = "radio" value="score1" name="s">  yes
       <input type = "radio" value="score2" name="s">  no  </label>
-      <p> Do you have a fever? </p>
+      <p> Do you have a job which interacts with more than 10 people a day? </p>
+      <label id="text"><input type = "radio" value="score1" name="t">  yes
+      <input type = "radio" value="score2" name="t">  no  </label>
+      <br>
+      <p> Do you have a fever (over 100F or 38C)? </p>
       <label id="text"><input type = "radio" value="score1" name="third">  yes
       <input type = "radio" value="score2" name="third">  no  </label>
       <br>
-
+      <br>
+      <button onclick="addUpAnswers()">SUBMIT</button>
+      <p id = "answer" class = "answer"> </p>
+      <br>
       <!--  if else questions from now on -->
-      <br>
-      <br>
-      <br>
-      <br>
-
-      <p class="myText"> Do you feel unwell? </p>
+      <p id="text"> Next is a series of questions that will estimate what your sickness is. </p>
+      <hr>
+      <p id="text"> Do you feel unwell? </p>
 
       <button onclick="yesFunction()">.    Yes    .</button>
       <button onclick="noFunction()">.     No    .</button>
