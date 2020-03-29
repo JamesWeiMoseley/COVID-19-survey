@@ -1,4 +1,4 @@
-
+//date function for the top of the page
   let d = new Date();
   document.body.innerHTML = "<h2> Today's date is " + d + "</h2>";
 
@@ -16,13 +16,31 @@
      }
 
     });
-
+//These three functions are for the first initial questions: name, age, sex
     function updatetext() {
       var inputelem = document.getElementById("mytext");
       var elem = document.getElementById("yeet");
-      elem.innerHTML = inputelem.value;
+      elem.innerHTML = "Hello " + inputelem.value;
     }
 
+
+    function updateAge() {
+      var inputelem = document.getElementById("ageText");
+      var elem = document.getElementById("ageTextAnswer");
+      elem.innerHTML = "You are " + inputelem.value + " years old";
+    }
+
+    function updateSex() {
+      var inputelem = document.getElementById("sex");
+      var elem = document.getElementById("sexAnswer");
+      elem.innerHTML = "You are sexy";
+    }
+
+//There functions are for the yes and no button that produce simple answers that print underneath the buttons
 function yesFunction() {
-  console.log("yes");
+  document.getElementById('demo').innerHTML = "You are sick!";
+}
+
+function noFunction() {
+  document.getElementById('demo').innerHTML = "You are not sick";
 }
