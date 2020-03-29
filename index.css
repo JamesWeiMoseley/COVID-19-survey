@@ -1,0 +1,76 @@
+* {
+  font-family: segui oi;
+
+}
+
+body {
+  background-image: url("blue.jpg");
+  background-color: #00008B;
+
+}
+
+input {
+  margin: 5px 10px;
+}
+
+#wrapper {
+  width: 50%;
+  margin: 0 auto;
+  background: black;
+  padding: 10px 15px;
+  border-radius: 10px;
+  opacity: .9;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: 6px solid #e7e7e7;
+  justify-content: center;
+}
+
+button:hover {background-color: #e7e7e7;}
+
+h1 {
+  color: white;
+  padding-left: 30px;
+  background-color: blue;
+  font-size: 50px;
+  text-align: center;
+  opacity: .5;
+}
+
+
+
+#text {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+h3 {
+  color: white;
+  font-size: 30px;
+}
+
+h4 {
+  color: gray;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+  color: #e0ebeb;
+}
+li {
+  font-size: 18px;
+  background-color: gray;
+  opacity: .75;
+}
+
+
+a {
+  text-decoration: none;
+
+}
